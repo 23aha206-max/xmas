@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christmas Responsive Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Snow layer -->
+  <div class="snow" aria-hidden="true">
+    <span class="flake" style="--x:5%;  --s:6px;  --o:.65; --d:10s; --delay:-2s; --drift:20px;"></span>
+    <span class="flake" style="--x:18%; --s:8px;  --o:.7;  --d:14s; --delay:-9s; --drift:18px;"></span>
+    <span class="flake" style="--x:35%; --s:5px;  --o:.55; --d:11s; --delay:-3s; --drift:-16px;"></span>
+    <span class="flake" style="--x:52%; --s:4px;  --o:.5;  --d:15s; --delay:-5s; --drift:-12px;"></span>
+    <span class="flake" style="--x:70%; --s:3px;  --o:.42; --d:10s; --delay:-6s; --drift:12px;"></span>
+    <span class="flake" style="--x:88%; --s:6px;  --o:.6;  --d:14s; --delay:-13s; --drift:-15px;"></span>
+  </div>
+
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="brand-badge">🎄</div>
+        <div>
+          <div class="mini">Christmas Special</div>
+          <div>Responsive Page</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#hero">トップ</a>
+        <a href="#features">見どころ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="card hero-copy">
+          <h1>Happy Holidays<br>and Merry Christmas</h1>
+          <p class="lead">
+            画面サイズに応じてレイアウトが切り替わるレスポンシブページです。
+          </p>
+
+          <div class="cta-row">
+            <button class="btn primary" id="partyBtn">✨ クリック演出</button>
+            <button class="btn" id="snowBtn">❄ 雪を降らす</button>
+          </div>
+        </div>
+
+        <div class="card tree-wrap">
+          <div class="tree" id="tree">
+            <div class="star"></div>
+
+            <div class="tree-layers">
+              <div class="layer" style="--w:120px;--h:72px;"></div>
+              <div class="layer" style="--w:180px;--h:86px;"></div>
+              <div class="layer" style="--w:240px;--h:96px;"></div>
+            </div>
+
+            <div class="lights">
+              <span class="bulb gold"  style="left:50%;top:20%;"></span>
+              <span class="bulb red"   style="left:35%;top:35%;"></span>
+              <span class="bulb green" style="left:65%;top:38%;"></span>
+              <span class="bulb gold"  style="left:45%;top:55%;"></span>
+              <span class="bulb red"   style="left:60%;top:60%;"></span>
+            </div>
+
+            <div class="trunk"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="card feature">
+          <h3>📱 SP対応</h3>
+          <p>スマホでは1カラムで読みやすく表示。</p>
+        </div>
+        <div class="card feature">
+          <h3>🖥️ PC対応</h3>
+          <p>PCでは2カラムで世界観を演出。</p>
+        </div>
+        <div class="card feature">
+          <h3>❄ 演出</h3>
+          <p>CSS雪＋クリックで音と光。</p>
+        </div>
+      </section>
+
+      <footer>
+        <div>© 2025 Christmas Responsive Lesson</div>
+      </footer>
+    </main>
+  </div>
+
+  <audio id="xmasSound" src="xmas.mp3" preload="auto"></audio>
+  <script src="js/script.js"></script>
+</body>
+</html>
